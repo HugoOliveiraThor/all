@@ -1,20 +1,6 @@
-# Dictonary Hugo
-
-Here i will put all my information about commands , receipts everthing that i learned in my life will be here.
-
-### Installation
-
-```
-$ npm install
-```
-
-### Local Development
-
-```
-$ npm start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+---
+sidebar_position: 1
+---
 
 # Manage Docs Versions
 
@@ -67,4 +53,3 @@ It is possible to edit versioned docs in their respective folder:
 
 - `versioned_docs/version-1.0/hello.md` updates `http://localhost:3000/docs/hello`
 - `docs/hello.md` updates `http://localhost:3000/docs/next/hello`
-
