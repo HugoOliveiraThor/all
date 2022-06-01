@@ -9,7 +9,7 @@ const config = {
   title: 'Dictonary Hugo',
   tagline: 'Everthing that I see in my live',
   url: 'https://all-beige.vercel.app/',
-  baseUrl: '/',
+  baseUrl: '.',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
