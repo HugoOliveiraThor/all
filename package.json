@@ -1,5 +1,5 @@
 {
-  "name": "dictonary-hugo",
+  "name": "my-website",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -11,8 +11,7 @@
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids",
-    "commit": "cz"
+    "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-beta.21",
@@ -24,8 +23,7 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "2.0.0-beta.21",
-    "cz-conventional-changelog": "3.3.0"
+    "@docusaurus/module-type-aliases": "2.0.0-beta.21"
   },
   "browserslist": {
     "production": [
@@ -38,10 +36,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   }
 }

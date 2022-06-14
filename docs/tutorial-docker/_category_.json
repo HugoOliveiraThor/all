@@ -1,0 +1,8 @@
+{
+  "label": "Tutorial - Docker",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Useful informations about Docker"
+  }
+}

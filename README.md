@@ -1,70 +1,41 @@
-# Dictonary Hugo
+# Website
 
-Here i will put all my information about commands , receipts everthing that i learned in my life will be here.
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
 ### Installation
 
 ```
-$ npm install
+$ yarn
 ```
 
 ### Local Development
 
 ```
-$ npm start
+$ yarn start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-# Manage Docs Versions
+### Build
 
-Docusaurus can manage multiple versions of your docs.
-
-## Create a docs version
-
-Release a version 1.0 of your project:
-
-```bash
-npm run docusaurus docs:version 1.0
+```
+$ yarn build
 ```
 
-The `docs` folder is copied into `versioned_docs/version-1.0` and `versions.json` is created.
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-Your docs now have 2 versions:
+### Deployment
 
-- `1.0` at `http://localhost:3000/docs/` for the version 1.0 docs
-- `current` at `http://localhost:3000/docs/next/` for the **upcoming, unreleased docs**
+Using SSH:
 
-## Add a Version Dropdown
-
-To navigate seamlessly across versions, add a version dropdown.
-
-Modify the `docusaurus.config.js` file:
-
-```js title="docusaurus.config.js"
-module.exports = {
-  themeConfig: {
-    navbar: {
-      items: [
-        // highlight-start
-        {
-          type: 'docsVersionDropdown',
-        },
-        // highlight-end
-      ],
-    },
-  },
-};
+```
+$ USE_SSH=true yarn deploy
 ```
 
-The docs version dropdown appears in your navbar:
+Not using SSH:
 
-![Docs Version Dropdown](./img/docsVersionDropdown.png)
+```
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
 
-## Update an existing version
-
-It is possible to edit versioned docs in their respective folder:
-
-- `versioned_docs/version-1.0/hello.md` updates `http://localhost:3000/docs/hello`
-- `docs/hello.md` updates `http://localhost:3000/docs/next/hello`
-
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
